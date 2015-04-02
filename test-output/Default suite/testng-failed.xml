@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="Tests.WhenUserOpenHompage">
+      <class name="Tests.AddNewAccountTest">
         <methods>
+          <include name="registerNewUserInSystem"/>
           <include name="testFixtureSetUp"/>
-          <include name="LoginLinkShoudByAvailbleAndWork"/>
           <include name="testTherdDown"/>
         </methods>
-      </class> <!-- Tests.WhenUserOpenHompage -->
+      </class> <!-- Tests.AddNewAccountTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

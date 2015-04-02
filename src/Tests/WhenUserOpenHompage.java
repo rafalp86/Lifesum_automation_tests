@@ -3,6 +3,7 @@ package Tests;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import Pages.GetStartedPage;
 import Pages.HomePage;
 import Pages.LoginForm;
 

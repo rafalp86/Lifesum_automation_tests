@@ -48,7 +48,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Default_suite">
-                    <span>C:\Users\Administrator\AppData\Local\Temp\testng-eclipse--1846189785\testng-customsuite.xml</span>
+                    <span>D:\Project\GIT\Lifesum_automation_tests\testngAllTests.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -90,7 +90,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods,   2 passed</span>
+                    <span class="method-stats">3 methods,   3 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -109,6 +109,11 @@
                         <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="Tests.WhenUserOpenHompage" hash-for-method="LoginLinkShoudByAvailbleAndWork">LoginLinkShoudByAvailbleAndWork</a> <!-- method navigator-link -->
                       </span>
                       <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="Tests.AddNewAccountTest" hash-for-method="registerNewUserInSystem">registerNewUserInSystem</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
                   </li>
                 </ul>
@@ -121,6 +126,21 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Default_suite" class="panel Default_suite">
+          <div class="suite-Default_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">Tests.AddNewAccountTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="registerNewUserInSystem">
+                  </a> <!-- registerNewUserInSystem -->
+                  <span class="method-name">registerNewUserInSystem</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_suite-class-passed -->
           <div class="suite-Default_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -146,7 +166,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\Administrator\AppData\Local\Temp\testng-eclipse--1846189785\testng-customsuite.xml</span>
+            <span class="header-content">D:\Project\GIT\Lifesum_automation_tests\testngAllTests.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -155,6 +175,7 @@
 &lt;suite name=&quot;Default suite&quot;&gt;
   &lt;test verbose=&quot;2&quot; name=&quot;Default test&quot;&gt;
     &lt;classes&gt;
+      &lt;class name=&quot;Tests.AddNewAccountTest&quot;/&gt;
       &lt;class name=&quot;Tests.WhenUserOpenHompage&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
@@ -169,7 +190,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Default test (1 class)</span>
+                <span class="test-name">Default test (2 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -195,20 +216,24 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(3);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'GetStartedLinkShoudByAvailbleAndWork')
-data.setCell(0, 2, 'Tests.WhenUserOpenHompage')
-data.setCell(0, 3, 2024);
+data.setCell(0, 1, 'registerNewUserInSystem')
+data.setCell(0, 2, 'Tests.AddNewAccountTest')
+data.setCell(0, 3, 15860);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'LoginLinkShoudByAvailbleAndWork')
 data.setCell(1, 2, 'Tests.WhenUserOpenHompage')
-data.setCell(1, 3, 1633);
+data.setCell(1, 3, 3733);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'GetStartedLinkShoudByAvailbleAndWork')
+data.setCell(2, 2, 'Tests.WhenUserOpenHompage')
+data.setCell(2, 3, 2609);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 3 seconds</span>
+              <span class="suite-total-time">Total running time: 22 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -234,30 +259,45 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">Tests.WhenUserOpenHompage</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">Tests.AddNewAccountTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">testFixtureSetUp</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">GetStartedLinkShoudByAvailbleAndWork</span>
-                <span class="method-start">5446 ms</span>
+                <span class="method-name">registerNewUserInSystem</span>
+                <span class="method-start">22835 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">testTherdDown</span>
-                <span class="method-start">7471 ms</span>
+                <span class="method-start">38695 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Tests.WhenUserOpenHompage</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">testFixtureSetUp</span>
+                <span class="method-start">39432 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">GetStartedLinkShoudByAvailbleAndWork</span>
+                <span class="method-start">57806 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">testTherdDown</span>
+                <span class="method-start">60415 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">testFixtureSetUp</span>
-                <span class="method-start">7661 ms</span>
+                <span class="method-start">61003 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">LoginLinkShoudByAvailbleAndWork</span>
-                <span class="method-start">14362 ms</span>
+                <span class="method-start">78404 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">testTherdDown</span>
-                <span class="method-start">15996 ms</span>
+                <span class="method-start">82137 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

@@ -2,7 +2,6 @@ package Pages;
 
 import org.openqa.selenium.By;
 
-import Tests.GetStartedPage;
 import Tests.TestBase;
 
 
